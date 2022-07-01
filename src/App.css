@@ -11,6 +11,8 @@ html {
 }
 .App {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   background: hsla(197, 100%, 63%, 1);
 
   background: linear-gradient(
@@ -36,7 +38,12 @@ html {
 
 .title {
   padding: 50px;
+  width: 100%;
 }
+.window {
+  border: 1px solid black;
+}
+
 .text_shadows {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
@@ -112,4 +119,30 @@ html {
   100% {
     transform: translate(0px, 0px);
   }
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: var(--color-quinary);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px;
+}
+
+.window {
+  border: 3px solid var(--color-quaternary);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.top {
+  padding: 10px;
+  background: var(--color-quaternary);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.content {
+  padding: 10px;
 }
